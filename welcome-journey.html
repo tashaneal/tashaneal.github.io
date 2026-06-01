@@ -66,6 +66,42 @@
             padding: 40px;
             color: #94a3b8;
         }
+        
+        .flow {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.step, .decision {
+    background-color: #1e293b;
+    border: 1px solid #60a5fa;
+    padding: 16px;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 300px;
+}
+
+.decision {
+    background-color: #334155;
+    font-weight: bold;
+}
+
+.arrow {
+    font-size: 28px;
+    color: #60a5fa;
+}
+
+.branches {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.branch {
+    width: 250px;
+}
     </style>
 </head>
 
@@ -102,30 +138,47 @@
     </div>
 
     <div class="card">
-        <h2>Journey Flow</h2>
+        <h2>Journey Flow</h2> 
+        <div class="card">
+    <h2>Journey Flow</h2>
 
-        <div class="journey">
-Signup Form Entry
+    <div class="flow">
+        <div class="step">Signup Form</div>
+        <div class="arrow">↓</div>
+        <div class="step">Welcome Email</div>
+        <div class="arrow">↓</div>
+        <div class="step">Wait 2 Days</div>
+        <div class="arrow">↓</div>
+        <div class="decision">Opened Email?</div>
 
-↓
-Welcome Email Sent
+        <div class="branches">
+            <div class="branch">
+                <strong>YES</strong>
+                <div class="step">Product Education Email</div>
+            </div>
 
-↓
-Wait 2 Days
+            <div class="branch">
+                <strong>NO</strong>
+                <div class="step">Resend Welcome Email</div>
+            </div>
+        </div>
 
-↓
-Did Subscriber Open Email?
+        <div class="arrow">↓</div>
+        <div class="decision">Clicked CTA?</div>
 
-YES → Product Education Email
-NO → Resend Welcome Email
+        <div class="branches">
+            <div class="branch">
+                <strong>YES</strong>
+                <div class="step">Discount Offer</div>
+            </div>
 
-↓
-Did Subscriber Click CTA?
-
-YES → Discount Offer
-NO → Re-engagement Path
+            <div class="branch">
+                <strong>NO</strong>
+                <div class="step">Re-engagement Path</div>
+            </div>
         </div>
     </div>
+</div>
 
     <div class="card">
         <h2>Segmentation Strategy</h2>
