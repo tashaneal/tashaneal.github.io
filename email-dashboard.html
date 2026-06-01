@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Analytics Dashboard | Tasha Neal</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: white;
+            line-height: 1.7;
+        }
+
+        header {
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        h1 {
+            font-size: 46px;
+        }
+
+        h2 {
+            color: #60a5fa;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #1e293b;
+            padding: 28px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .metric-card {
+            background: linear-gradient(145deg, #1e293b, #111827);
+            border: 1px solid rgba(96, 165, 250, 0.2);
+            padding: 25px;
+            border-radius: 14px;
+            text-align: center;
+        }
+
+        .metric-number {
+            font-size: 42px;
+            font-weight: bold;
+            color: #60a5fa;
+            margin-top: 10px;
+        }
+
+        .chart-box {
+            background-color: #111827;
+            border-radius: 14px;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        .bar-chart {
+            margin-top: 25px;
+        }
+
+        .bar-group {
+            margin-bottom: 20px;
+        }
+
+        .bar-label {
+            margin-bottom: 6px;
+        }
+
+        .bar {
+            height: 24px;
+            border-radius: 999px;
+            background: linear-gradient(to right, #2563eb, #60a5fa);
+        }
+
+        .insight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .insight-card {
+            background-color: #111827;
+            padding: 22px;
+            border-radius: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #94a3b8;
+        }
+
+        a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Email Analytics Dashboard</h1>
+
+    <p>
+        Salesforce Marketing Cloud Reporting & KPI Concept Project
+    </p>
+
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Project Overview</h2>
+
+        <p>
+            This project demonstrates a marketing performance dashboard inspired by Salesforce Marketing Cloud reporting and campaign analytics workflows.
+        </p>
+
+        <p>
+            The dashboard focuses on customer engagement metrics, campaign optimization, and lifecycle marketing performance insights.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Campaign Performance Metrics</h2>
+
+        <div class="dashboard-grid">
+
+            <div class="metric-card">
+                <h3>Open Rate</h3>
+
+                <div class="metric-number">
+                    42%
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <h3>Click Rate</h3>
+
+                <div class="metric-number">
+                    18%
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <h3>Conversion Rate</h3>
+
+                <div class="metric-number">
+                    9%
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <h3>Unsubscribe Rate</h3>
+
+                <div class="metric-number">
+                    1.2%
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Campaign Comparison</h2>
+
+        <div class="chart-box">
+
+            <div class="bar-chart">
+
+                <div class="bar-group">
+
+                    <div class="bar-label">
+                        Welcome Journey
+                    </div>
+
+                    <div class="bar" style="width: 82%;"></div>
+
+                </div>
+
+                <div class="bar-group">
+
+                    <div class="bar-label">
+                        Abandoned Cart
+                    </div>
+
+                    <div class="bar" style="width: 68%;"></div>
+
+                </div>
+
+                <div class="bar-group">
+
+                    <div class="bar-label">
+                        VIP Rewards Campaign
+                    </div>
+
+                    <div class="bar" style="width: 91%;"></div>
+
+                </div>
+
+                <div class="bar-group">
+
+                    <div class="bar-label">
+                        Re-engagement Campaign
+                    </div>
+
+                    <div class="bar" style="width: 57%;"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Marketing Insights</h2>
+
+        <div class="insight-grid">
+
+            <div class="insight-card">
+
+                <h3>Top Performing Audience</h3>
+
+                <p>
+                    VIP subscribers demonstrated the highest click-through and conversion rates.
+                </p>
+
+            </div>
+
+            <div class="insight-card">
+
+                <h3>Optimization Opportunity</h3>
+
+                <p>
+                    Re-engagement campaigns showed lower engagement and may benefit from revised subject lines and segmentation.
+                </p>
+
+            </div>
+
+            <div class="insight-card">
+
+                <h3>A/B Testing Insight</h3>
+
+                <p>
+                    Personalized subject lines outperformed generic messaging by 18%.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <a href="index.html">← Back to Portfolio</a>
+</footer>
+
+</body>
+</html>
