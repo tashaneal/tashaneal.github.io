@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preference Center | Tasha Neal</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: white;
+            line-height: 1.7;
+        }
+
+        header {
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        h1 {
+            font-size: 46px;
+        }
+
+        h2 {
+            color: #60a5fa;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #1e293b;
+            padding: 28px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+        }
+
+        .preference-box {
+            background-color: white;
+            color: #111827;
+            border-radius: 16px;
+            padding: 40px;
+            margin-top: 25px;
+        }
+
+        .preference-box h2 {
+            color: #0f172a;
+        }
+
+        .preference-group {
+            margin-top: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 14px;
+            font-weight: bold;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #cbd5e1;
+        }
+
+        button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 10px;
+            margin-top: 35px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3b82f6;
+        }
+
+        .concept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .concept-card {
+            background-color: #111827;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(96, 165, 250, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #94a3b8;
+        }
+
+        a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Preference Center</h1>
+
+    <p>
+        Salesforce Marketing Cloud Subscriber Management Concept Project
+    </p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Project Overview</h2>
+
+        <p>
+            This project demonstrates a subscriber preference center inspired by Salesforce Marketing Cloud CloudPages and subscriber management workflows.
+        </p>
+
+        <p>
+            The goal is to improve customer retention and engagement by allowing subscribers to customize communication preferences instead of fully unsubscribing.
+        </p>
+    </div>
+
+    <div class="card">
+
+        <h2>Preference Center Mockup</h2>
+
+        <div class="preference-box">
+
+            <h2>Hello %%FirstName%%</h2>
+
+            <p>
+                Manage your communication preferences below.
+            </p>
+
+            <div class="preference-group">
+
+                <label>
+                    <input type="checkbox">
+                    Promotional Emails
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    SMS Notifications
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Product Updates
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    VIP Rewards & Offers
+                </label>
+
+            </div>
+
+            <div class="preference-group">
+
+                <label>Email Frequency</label>
+
+                <select>
+                    <option>Daily</option>
+                    <option>Weekly</option>
+                    <option>Monthly</option>
+                </select>
+
+            </div>
+
+            <div class="preference-group">
+
+                <label>Preferred Communication Channel</label>
+
+                <select>
+                    <option>Email</option>
+                    <option>SMS</option>
+                    <option>Email + SMS</option>
+                </select>
+
+            </div>
+
+            <button>
+                Save Preferences
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>SFMC Concepts Demonstrated</h2>
+
+        <div class="concept-grid">
+
+            <div class="concept-card">
+                <h3>Subscriber Management</h3>
+
+                <p>
+                    Customer communication preferences and profile management concepts.
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <h3>CloudPages</h3>
+
+                <p>
+                    Responsive preference center concepts inspired by Marketing Cloud CloudPages.
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <h3>Data Extensions</h3>
+
+                <p>
+                    Preference selections could update subscriber records and segmentation logic.
+                </p>
+            </div>
+
+            <div class="concept-card">
+                <h3>Consent Management</h3>
+
+                <p>
+                    Communication preference collection aligned with customer consent concepts.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <a href="index.html">← Back to Portfolio</a>
+</footer>
+
+</body>
+</html>
