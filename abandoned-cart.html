@@ -1,1 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abandoned Cart Journey | Tasha Neal</title>
 
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: white;
+            line-height: 1.8;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        h2 {
+            color: #60a5fa;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #1e293b;
+            padding: 25px;
+            border-radius: 14px;
+            margin-bottom: 30px;
+        }
+
+        .flow {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .step, .decision {
+            background: linear-gradient(145deg, #1e293b, #0f172a);
+            border: 1px solid #60a5fa;
+            padding: 18px;
+            border-radius: 14px;
+            margin: 12px auto;
+            max-width: 320px;
+            box-shadow: 0 0 15px rgba(96, 165, 250, 0.15);
+            transition: 0.3s ease;
+        }
+
+        .step:hover,
+        .decision:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 25px rgba(96, 165, 250, 0.35);
+        }
+
+        .decision {
+            background: linear-gradient(145deg, #334155, #1e293b);
+            font-weight: bold;
+        }
+
+        .arrow {
+            font-size: 32px;
+            color: #60a5fa;
+            margin: 10px 0;
+        }
+
+        .branches {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .branch {
+            width: 250px;
+        }
+
+        .mock-email {
+            background-color: white;
+            color: #111827;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .mock-email h2 {
+            color: #0f172a;
+        }
+
+        .mock-email button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #94a3b8;
+        }
+
+        a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Abandoned Cart Journey</h1>
+
+    <p>
+        Salesforce Marketing Cloud Journey Builder Concept Project
+    </p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Project Overview</h2>
+
+        <p>
+            This automation was designed to recover abandoned carts and increase completed purchases through personalized reminder emails and engagement-based decision logic.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Journey Flow</h2>
+
+        <div class="flow">
+
+            <div class="step">Cart Abandonment Entry Event</div>
+
+            <div class="arrow">↓</div>
+
+            <div class="step">Wait 4 Hours</div>
+
+            <div class="arrow">↓</div>
+
+            <div class="step">Reminder Email Sent</div>
+
+            <div class="arrow">↓</div>
+
+            <div class="decision">Purchase Completed?</div>
+
+            <div class="branches">
+
+                <div class="branch">
+                    <strong>YES</strong>
+
+                    <div class="step">
+                        Exit Journey
+                    </div>
+                </div>
+
+                <div class="branch">
+                    <strong>NO</strong>
+
+                    <div class="step">
+                        Send Discount Offer
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="decision">Clicked CTA?</div>
+
+            <div class="branches">
+
+                <div class="branch">
+                    <strong>YES</strong>
+
+                    <div class="step">
+                        Final Reminder Email
+                    </div>
+                </div>
+
+                <div class="branch">
+                    <strong>NO</strong>
+
+                    <div class="step">
+                        Exit Journey
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Email Mockup</h2>
+
+        <div class="mock-email">
+
+            <p><strong>Subject:</strong> You Left Something Behind 👀</p>
+
+            <hr>
+
+            <h2>Your Cart Is Waiting</h2>
+
+            <p>
+                Complete your order now before your selected items sell out.
+            </p>
+
+            <button>Return To Cart</button>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Marketing Concepts Demonstrated</h2>
+
+        <ul>
+            <li>Journey Builder</li>
+            <li>Decision Splits</li>
+            <li>Customer Lifecycle Marketing</li>
+            <li>Behavioral Triggers</li>
+            <li>Conversion Optimization</li>
+            <li>Segmentation</li>
+            <li>Personalization</li>
+            <li>Automation Timing</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <a href="index.html">← Back to Portfolio</a>
+</footer>
+
+</body>
+</html>
