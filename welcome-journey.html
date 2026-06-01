@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Journey Automation | Tasha Neal</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: white;
+            line-height: 1.8;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        h2 {
+            color: #60a5fa;
+            margin-top: 50px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .journey {
+            background-color: #111827;
+            padding: 20px;
+            border-left: 4px solid #60a5fa;
+            margin-top: 20px;
+            white-space: pre-line;
+        }
+
+        code {
+            background-color: #1e293b;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #93c5fd;
+        }
+
+        a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Welcome Journey Automation</h1>
+
+    <p>
+        Salesforce Marketing Cloud Journey Builder Concept Project
+    </p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Project Overview</h2>
+
+        <p>
+            This project demonstrates a customer onboarding automation workflow modeled after Salesforce Marketing Cloud Journey Builder.
+        </p>
+
+        <p>
+            The goal of the journey is to improve customer engagement, increase first purchases, and personalize onboarding communication based on subscriber behavior.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Business Goal</h2>
+
+        <p>
+            New subscribers were signing up but failing to engage after the initial email interaction. This journey was designed to increase engagement and move customers toward conversion through personalized lifecycle communication.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Journey Flow</h2>
+
+        <div class="journey">
+Signup Form Entry
+
+↓
+Welcome Email Sent
+
+↓
+Wait 2 Days
+
+↓
+Did Subscriber Open Email?
+
+YES → Product Education Email
+NO → Resend Welcome Email
+
+↓
+Did Subscriber Click CTA?
+
+YES → Discount Offer
+NO → Re-engagement Path
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Segmentation Strategy</h2>
+
+        <p>
+            Subscriber data was organized using Data Extension concepts including:
+        </p>
+
+        <ul>
+            <li>Subscriber Key</li>
+            <li>First Name</li>
+            <li>Email Address</li>
+            <li>Purchase Status</li>
+            <li>Engagement Activity</li>
+        </ul>
+
+        <p>
+            Decision splits and segmentation logic were based on engagement behavior and purchase activity.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Personalization Example</h2>
+
+        <p>
+            Example AMPscript-inspired personalization:
+        </p>
+
+        <p>
+            <code>Hello %%FirstName%%!</code>
+        </p>
+
+        <p>
+            Dynamic content and personalization strings were used to improve customer engagement and create a more customized onboarding experience.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Key Marketing Concepts</h2>
+
+        <ul>
+            <li>Journey Builder</li>
+            <li>Lifecycle Marketing</li>
+            <li>Automation Studio Concepts</li>
+            <li>Segmentation</li>
+            <li>Personalization</li>
+            <li>A/B Testing</li>
+            <li>Customer Engagement</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Tools Used</h2>
+
+        <ul>
+            <li>HTML/CSS</li>
+            <li>GitHub Pages</li>
+            <li>Salesforce Marketing Cloud Concepts</li>
+            <li>UX Journey Mapping</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <a href="index.html">← Back to Portfolio</a>
+</footer>
+
+</body>
+</html>
