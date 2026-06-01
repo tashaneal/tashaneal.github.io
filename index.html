@@ -67,21 +67,64 @@
             padding: 40px;
             color: #94a3b8;
         }
+
+    .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    background-color: #1e293b;
+    padding: 24px;
+    border-radius: 14px;
+    transition: 0.3s ease;
+    border: 1px solid rgba(96, 165, 250, 0.15);
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    border-color: #60a5fa;
+    box-shadow: 0 0 20px rgba(96, 165, 250, 0.2);
+}
+
+.skill-card h3 {
+    color: #93c5fd;
+}
     </style>
 </head>
 
 <body>
 
 <header>
+
+    <div class="hero-badge">
+        Salesforce Marketing Cloud Portfolio
+    </div>
+
     <h1>Tasha Neal</h1>
 
     <p class="subtitle">
-        Salesforce Marketing Cloud Candidate • UX Designer • Marketing Automation Enthusiast
+        Salesforce Marketing Cloud Candidate • Lifecycle Marketing • UX Design • Marketing Automation
     </p>
 
-    <p>
-        Salesforce Associate Certified • Trailhead Ranger • HTML/CSS • SQL • UX • Automation
+    <p class="hero-description">
+        Building customer journey automations, lifecycle campaigns, and responsive email experiences through hands-on Salesforce Marketing Cloud portfolio projects.
     </p>
+
+    <div class="hero-buttons">
+
+        <a class="button-primary" href="welcome-journey.html">
+            View Projects
+        </a>
+
+        <a class="button-secondary" href="https://github.com/tashaneal" target="_blank">
+            GitHub
+        </a>
+
+    </div>
+    
 </header>
 
 <section class="section">
